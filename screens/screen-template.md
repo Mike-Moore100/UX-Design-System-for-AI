@@ -42,4 +42,4 @@ RULES
 - no competing actions
 - no unnecessary elements
 - infer missing details from the task or codebase
-- must pass UX.md validation
+- must pass Layr UX validation

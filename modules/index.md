@@ -15,7 +15,7 @@ These modules are part of the current Layr system and must be applied when relev
 
 Primary files:
 
-- `UX.md`
+- `modules/ux.md`
 - `methods/ux/`
 
 Use for:
@@ -36,7 +36,7 @@ Use for:
 
 Primary files:
 
-- `DESIGN.md`
+- `modules/design.md`
 - `methods/design/`
 
 Use for:
@@ -57,7 +57,7 @@ Use for:
 
 Primary files:
 
-- `ACCESSIBILITY.md`
+- `modules/accessibility.md`
 - `methods/accessibility/`
 
 Use for:
@@ -76,7 +76,7 @@ Use for:
 
 Primary files:
 
-- `SECURITY.md`
+- `modules/security.md`
 - `methods/security/`
 
 Use for:
@@ -95,7 +95,7 @@ Use for:
 
 Primary files:
 
-- `PERFORMANCE.md`
+- `modules/performance.md`
 - `methods/performance/`
 
 Use for:
@@ -113,7 +113,7 @@ Use for:
 
 Primary files:
 
-- `ANALYTICS.md`
+- `modules/analytics.md`
 - `methods/analytics/`
 
 Use for:
@@ -130,7 +130,7 @@ Use for:
 
 Primary files:
 
-- `QA.md`
+- `modules/qa.md`
 - `methods/qa/`
 
 Use for:
@@ -147,7 +147,7 @@ Use for:
 
 Primary files:
 
-- `AI.md`
+- `modules/ai.md`
 - `methods/ai/`
 
 Use for:
@@ -165,7 +165,7 @@ Use for:
 
 Primary files:
 
-- `CRO.md`
+- `modules/cro.md`
 - `methods/cro/`
 
 Use for:
@@ -186,7 +186,7 @@ Use for:
 
 Primary files:
 
-- `SEO.md`
+- `modules/seo.md`
 - `methods/seo/`
 
 Use for:
@@ -212,7 +212,7 @@ When the user asks for AI search, GEO, AI answers, ChatGPT search, Copilot visib
 
 Primary files:
 
-- `MARKETING.md`
+- `modules/marketing.md`
 - `methods/marketing/`
 
 Use for:
@@ -233,7 +233,7 @@ Use for:
 
 Primary files:
 
-- `COPYWRITING.md`
+- `modules/copywriting.md`
 - `methods/copywriting/`
 
 Use for:

@@ -27,7 +27,7 @@ Depth: Standard
 Read these files in order:
 
 1. `modules/index.md`
-2. active module rule files relevant to the task
+2. active module rule files in `modules/` relevant to the task
 3. `methods/index.md`
 4. relevant method files
 5. `scorecard.md`
@@ -198,7 +198,7 @@ For every task:
 2. Read the user's `Scope:` and `Depth:` values, or use the defaults.
 3. Select relevant modules using `modules/index.md`.
 4. Select relevant methods using `methods/index.md` within the chosen depth.
-5. Apply active module rule files as strict constraints.
+5. Apply active module rule files from `modules/` as strict constraints.
 6. Preserve the existing design language unless the task explicitly asks for a redesign.
 7. Build or improve the UI.
 8. Score the result with `scorecard.md`.

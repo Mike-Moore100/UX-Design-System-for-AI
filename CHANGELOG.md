@@ -23,6 +23,7 @@ Use GitHub Releases for public tagged releases.
 - Strengthened method routing for landing pages, onboarding, pricing, forms, public content, sensitive flows, vague copy, hesitation points, audience scaling, and unfinished interface states.
 - Updated README, RUN, master prompt, and AI-tool entry files to default to `Scope: Auto` and `Depth: Standard`.
 - Expanded optional context fields without making setup mandatory.
+- Moved active module rule files into `modules/` so the repository root stays easier to scan.
 
 ---
 
@@ -56,7 +57,7 @@ Use GitHub Releases for public tagged releases.
 - Updated the README to support repo URL usage first and local folder usage second.
 - Made `layr.config.md` optional instead of required.
 - Made screen briefs optional instead of required.
-- Updated `UX.md` and `DESIGN.md` so users do not edit core rule files.
+- Updated `modules/ux.md` and `modules/design.md` so users do not edit core rule files.
 - Added evidence-based scoring through `scorecard.md`.
 - Added `methods/index.md` so AI tools can choose relevant methods instead of applying everything.
 - Added AI-tool entry files for Codex, Claude, and Cursor.
@@ -76,8 +77,8 @@ Use GitHub Releases for public tagged releases.
 ### Added
 
 - Initial Layr UX and design rule system.
-- `UX.md` for behaviour, flow, scoring, and validation.
-- `DESIGN.md` for hierarchy, spacing, layout, and visual clarity.
+- `modules/ux.md` for behaviour, flow, scoring, and validation.
+- `modules/design.md` for hierarchy, spacing, layout, and visual clarity.
 - UX methods library covering Fitts's Law, Hick's Law, Cognitive Load, Jakob's Law, Gestalt, Signal to Noise, Default Bias, and more.
 - Master prompt in `/prompts`.
 - Screen definition template.

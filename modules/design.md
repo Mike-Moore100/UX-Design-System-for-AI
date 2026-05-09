@@ -40,7 +40,7 @@ If the UI looks good but is harder to use → FAIL
 You are NOT styling UI.
 
 You are implementing:
-→ a structured visual system that supports UX.md
+→ a structured visual system that supports the UX rules
 
 All decisions must:
 - reduce visual noise
