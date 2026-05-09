@@ -1,10 +1,10 @@
-# UX + Design System (for AI-built Websites / apps)
+# Layr - Production System for AI-Built Apps
 
-A modular UX, design, and product optimisation system for turning AI-built interfaces into production-grade apps, turning proven principles into enforceable constraints that reduce friction, build trust, and drive action.
+A modular production system for turning AI-built interfaces into production-grade apps. Layr turns proven UX, design, accessibility, security, performance, SEO, CRO, marketing, and copywriting principles into enforceable constraints that reduce friction, build trust, and drive action.
 
 ## Before vs After
 
-Turn messy AI output into clean, structured UI.
+Turn typical AI output into a clearer, more usable, more production-ready interface.
 
 <p align="center">
   <img src="./examples/Example-1.png" width="1000"/>
@@ -14,8 +14,7 @@ Turn messy AI output into clean, structured UI.
 
 Layr works with zero setup.
 
-Start with Option 1.
-If your AI tool cannot read GitHub URLs, use Option 2.
+Start with Option 1. If your AI tool cannot read GitHub URLs, use Option 2.
 
 ### Option 1 - Paste the repo URL
 
@@ -49,6 +48,7 @@ Use ./layr/RUN.md for this task.
 Scope: Auto
 Depth: Standard
 
+Task:
 Improve the pricing page so users can choose a plan faster.
 ```
 
@@ -100,7 +100,7 @@ layr/screens/dashboard.md
 
 “Create a dashboard for a project management app”
 
-→ Output follows UX rules automatically
+→ Layr selects the relevant modules and improves the output against production rules.
 
 ---
 
@@ -122,57 +122,71 @@ layr/screens/dashboard.md
 
 ## What this is
 
-A rule-based UX + design system for AI.
+Layr is a rule-based production system for AI-built software.
 
-It turns proven principles into strict rules the AI must follow when building.
+It gives AI tools a structured way to select the right product modules, apply proven methods, score the result, and improve weak areas before the output ships.
 
 ---
 
 ## What it’s based on / Methods
 
-- Hick’s Law - reduce choices  
-- Cognitive Load - reduce thinking  
-- Fitts’s Law - make actions easy  
-- Jakob’s Law - use familiar patterns  
-- Peak-End Rule - strong finish matters  
-- Goal Gradient - show progress  
-- Gestalt - clear structure  
-- Signal vs Noise - remove clutter  
-- Default Bias - guide decisions  
+- Hick’s Law - reduce choices
+- Cognitive Load - reduce thinking
+- Fitts’s Law - make actions easier
+- Jakob’s Law - use familiar patterns
+- Peak-End Rule - improve memorable moments
+- Goal Gradient - show progress
+- Gestalt - create clear structure
+- Signal vs Noise - remove clutter
+- Default Bias - guide decisions
 - Colour Theory - guide attention
 - Typography - improve readability
 - Spacing Rhythm - clarify structure
 - Accessibility - make interfaces usable for more people
 - Security - catch unsafe patterns before shipping
 - Performance - keep the product fast and stable
+- Analytics - measure behaviour and product learning
+- QA - catch edge cases and release risks
+- AI Product - make AI features trustworthy and controllable
 - CRO - reduce friction and increase action
-- SEO and AI Search - make content easier to find and understand
+- SEO and AI Search - make content easier for search engines and AI systems to understand
+- Marketing - sharpen positioning and value communication
+- Copywriting - make messages clear, specific, and persuasive
 - and more
 
-Most people know these.  
-This system enforces them.
+Most AI tools know these ideas. Layr makes them operational.
 
 ---
 
 ## Why it matters
 
-AI builds for functionality, not usability.
+AI can generate working screens quickly, but working is not the same as production-ready.
 
-So you get:
+Without a system, AI output often has:
 
-- messy UI  
-- too many decisions  
-- poor flows  
+- weak hierarchy
+- too many decisions
+- unclear flows
+- inconsistent design
+- missing accessibility
+- fragile security
+- poor performance
+- weak conversion paths
+- vague copy
 
-This system forces:
+Layr pushes the AI toward:
 
-- clarity  
-- speed  
-- obvious next steps  
+- clarity
+- speed
+- trust
+- accessibility
+- measurable behaviour
+- obvious next steps
+- production quality
 
 ---
 
-Build with real UX standards, not AI guesses.
+Build with real production standards, not AI guesses.
 
 ---
 
@@ -183,9 +197,9 @@ flowchart TD
     A["Task or repo URL"] --> B{"Optional context?"}
     B -- "No setup" --> C["Infer from task + codebase"]
     B -- "Config or screen brief" --> D["Read layr.config.md / screens"]
-    C --> E["UX rules"]
+    C --> E["Scope + depth control"]
     D --> E
-    E --> F["Module rules"]
+    E --> F["Selected module rules"]
     F --> G["Methods index + selected methods"]
     G --> H["Build or improve interface"]
     H --> I["Scorecard with evidence"]
@@ -213,11 +227,11 @@ flowchart TD
 
 | Mode | Best for | What the user provides | Quality |
 | --- | --- | --- | --- |
-| Zero setup | Trying Layr quickly, simple fixes, reviews | Task only | Strong generic UX improvement |
+| Zero setup | Trying Layr quickly, simple fixes, reviews | Task only | Strong production improvement |
 | Recommended | Real product work | Task + optional `layr.config.md` | Better product, user, and brand fit |
 | Screen-level | High-value screens and flows | Task + config + optional screen brief | Highest precision |
 
-Layr should never block on missing context unless the missing detail would materially change the UX direction.
+Layr should never block on missing context unless the missing detail would materially change the product direction.
 
 If context is missing, the AI should infer it and state assumptions briefly.
 
@@ -227,9 +241,11 @@ If context is missing, the AI should infer it and state assumptions briefly.
 
 Layr started with UX and Design because that is where AI-built products usually break first: unclear flows, weak hierarchy, messy screens, and interfaces that work but do not feel production-ready.
 
-Layr now supports a broader production layer for AI-built software.
+Layr now works as a broader production layer for AI-built software.
 
-Active modules cover UX, Design, Accessibility, Security, Performance, Analytics, QA, AI Product, CRO, SEO, AI Search, Marketing, and Copywriting.
+Active modules cover UX, Design, Accessibility, Security, Performance, Analytics, QA, AI Product, CRO, SEO, Marketing, and Copywriting.
+
+AI Search is supported through the SEO module when the task involves AI answers, retrieval visibility, GEO, ChatGPT search, Copilot visibility, or answer-engine discoverability.
 
 The system is designed so new modules can be added without making Layr harder to use.
 
@@ -242,7 +258,7 @@ Scope: Auto
 Depth: Standard
 ```
 
-Layr chooses the relevant active modules automatically.
+Layr chooses the relevant active modules automatically, so users do not need to understand the whole system before getting value.
 
 See `ROADMAP.md` for the planned module direction.
 
@@ -250,7 +266,7 @@ See `ROADMAP.md` for the planned module direction.
 
 ## Instructions
 
-Use this system to design screens that are fast, obvious, and require zero thinking.
+Use this system to build, review, or improve AI-generated product work until it is clearer, safer, faster, more accessible, more measurable, and more production-ready.
 
 ### Step 1 - Load Layr
 
@@ -277,6 +293,7 @@ Use ./layr/RUN.md for this task.
 Scope: Auto
 Depth: Standard
 
+Task:
 Improve the pricing page so users can choose a plan faster.
 ```
 
@@ -343,10 +360,10 @@ The AI will:
 - select relevant methods
 - infer missing context when safe
 - ask at most 3 questions only when context is truly blocking
-- build or improve the UI
+- build, review, or improve the product surface
 - score the result with evidence
 - fix weak areas
-- repeat until the screen scores at least 85
+- repeat until the output scores at least 85
 
 ---
 
@@ -426,4 +443,4 @@ Not allowed to resell or redistribute this as a standalone product.
 
 ---
 
-Build with real UX standards, not AI guesses.
+Build with real production standards, not AI guesses.
