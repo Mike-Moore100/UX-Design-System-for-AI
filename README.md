@@ -3,7 +3,7 @@
 > AI can generate apps. Layr turns them into production-grade products.
 
 <p align="center">
-  A modular UX, design, and product optimisation system for AI-built software.
+  A modular production system for AI-built software.
 </p>
 
 <p align="center">
@@ -11,13 +11,21 @@
 </p>
 
 <p align="center">
-  <a href="https://layrhq.io"><strong>Website</strong></a> ·
-  <a href="https://layrhq.io"><strong>Documentation</strong></a> ·
+  <a href="https://layrhq.io"><strong>Website</strong></a> •
+  <a href="https://layrhq.io"><strong>Documentation</strong></a> •
   <a href="https://layrhq.io"><strong>Examples</strong></a>
 </p>
 
+---
+
+# Output Example
+
+**Before:** typical AI output
+
+**After:** Layr applied
+
 <p align="center">
-  <img src="./examples/readme-example.png" width="100%" alt="Before and after example showing an AI-generated interface improved with Layr" />
+  <img src="./examples/readme-example.png" width="100%" alt="Before and after example showing a typical AI-generated interface compared with the same interface after Layr is applied" />
 </p>
 
 ---
@@ -34,35 +42,94 @@ It is not:
 - a UI generator
 - a collection of random rules
 
-Layr turns proven principles into enforceable constraints that reduce friction, build trust, and drive action.
+Layr is a modular intelligence layer that sits between:
+- AI generation
+and
+- production-ready software
+
+Modern AI tools can generate interfaces, components, flows, and features extremely fast.
+
+But most outputs still fail in the same places:
+- weak UX and hierarchy
+- inconsistent design systems
+- poor accessibility
+- shallow product thinking
+- missing analytics
+- weak SEO and AI visibility
+- fragile security
+- poor performance
+- no QA or measurement
+- weak conversion paths
+- inconsistent copy and messaging
+
+The result is software that looks impressive at first glance, but breaks under real usage.
+
+Layr fixes that.
 
 ---
 
-## Use It Now
+# Why Layr Exists
 
-Copy this prompt and paste it into your AI model:
+AI models are excellent at generating.
 
-```text
-Use the Layr production system: https://github.com/layr-hq/layr
+They are not excellent at:
+- production standards
+- behavioural UX
+- accessibility compliance
+- performance discipline
+- CRO
+- search visibility
+- product clarity
+- measurement systems
+- long-term maintainability
 
-Build: [YOUR PRODUCT]
+Most AI workflows optimise for:
+> generation speed
 
-Scope: Auto
-Depth: Standard
-```
-
-That’s it.
+Layr optimises for:
+> production quality
 
 ---
 
-## How Layr Works
+# How Layr Works
+
+Layr reads the task, selects the relevant modules, applies the correct methods, scores the output using evidence-based systems, then improves weak areas until the result is production-ready.
+
+Instead of blindly applying every rule, Layr intelligently routes the smallest set of modules that materially improve the task.
 
 ```mermaid
 flowchart LR
   A["AI Request"] --> B["Layr Task Analysis"]
-  B --> C{"Scope + Depth"}
-  C --> D["Select Relevant Modules"]
-  D --> E["Apply Methods + Rules"]
+  B --> C{"Select Relevant Modules"}
+
+  C --> D1["UX"]
+  C --> D2["Design"]
+  C --> D3["Accessibility"]
+  C --> D4["Security"]
+  C --> D5["Performance"]
+  C --> D6["QA"]
+  C --> D7["SEO"]
+  C --> D8["CRO"]
+  C --> D9["Analytics"]
+  C --> D10["AI Product"]
+  C --> D11["Marketing"]
+  C --> D12["Copywriting"]
+  C --> D13["AI Search"]
+
+  D1 --> E["Apply Methods + Rules"]
+  D2 --> E
+  D3 --> E
+  D4 --> E
+  D5 --> E
+  D6 --> E
+  D7 --> E
+  D8 --> E
+  D9 --> E
+  D10 --> E
+  D11 --> E
+  D12 --> E
+  D13 --> E
+
   E --> F["Score Output"]
   F --> G["Improve Weak Areas"]
   G --> H["Production-Ready Result"]
@@ -70,9 +137,11 @@ flowchart LR
 
 ---
 
-## Scope + Depth
+# Scope + Depth System
 
-### Scope
+Layr supports controlled invocation through:
+
+## Scope
 
 ```text
 Auto
@@ -91,7 +160,7 @@ Marketing
 Copywriting
 ```
 
-### Depth
+## Depth
 
 ```text
 Quick
@@ -99,16 +168,24 @@ Standard
 Deep
 ```
 
-### Default
+## Default
 
 ```text
 Scope: Auto
 Depth: Standard
 ```
 
+This allows Layr to act as:
+- selective
+- modular
+- intelligent
+- efficient
+
+instead of becoming a bloated universal checklist.
+
 ---
 
-## Areas Layr Covers
+# Areas Layr Covers
 
 | System | Focus |
 |---|---|
@@ -128,27 +205,88 @@ Depth: Standard
 
 ---
 
-## Science-Backed Methods
+# Science-Backed Methods
 
-Layr uses real behavioural, UX, design, performance, and conversion methodologies.
+Layr uses real behavioural, UX, design, performance, and conversion methodologies — not random AI opinions.
 
 Examples include:
 
 | Area | Methods |
 |---|---|
-| UX | Hick’s Law, Fitts’s Law, Cognitive Load Theory, Progressive Disclosure |
-| Design | Visual Hierarchy, Gestalt Principles, Signal-to-Noise, Grid Systems |
-| CRO | Goal Gradient, Price Anchoring, Risk Reversal, Form Conversion |
-| Accessibility | WCAG POUR, focus management, semantic structure, target size |
-| Performance | Performance budgets, loading strategy, rendering stability, interaction responsiveness |
-| SEO | Search intent alignment, structured data, internal linking, indexing |
-| AI Search | AI search visibility, entity clarity, retrieval structure |
+| UX | Hick’s Law, Cognitive Load Theory, Progressive Disclosure |
+| Design | Visual Hierarchy, Signal vs Noise, Gestalt Principles |
+| CRO | Loss Aversion, Goal Gradient Effect, Anchoring |
+| Accessibility | WCAG 2.1, focus management, semantic structure |
+| Performance | Critical rendering path, interaction latency optimisation |
+| SEO | Information architecture, semantic indexing, crawl structure |
+| AI Search | Retrieval structuring, entity clarity, context optimisation |
+
+Layr operationalises these methods into enforceable production systems AI can apply automatically.
 
 ---
 
-## Example
+# Why This Is Different From Agents
 
-Copy this prompt and paste it into your AI model:
+Agents generate.
+
+Layr evaluates, routes, scores, and improves.
+
+Skills solve isolated tasks.
+
+Layr applies production systems across the entire product.
+
+Most AI tooling focuses on:
+- output quantity
+- speed
+- generation loops
+
+Layr focuses on:
+- usability
+- trust
+- clarity
+- accessibility
+- performance
+- production quality
+
+---
+
+# Works With
+
+- Claude
+- Codex
+- Cursor
+- Gemini
+- Windsurf
+- Replit
+- OpenAI Agents
+- and modern agentic AI workflows.
+
+Layr is model-agnostic.
+
+It works as a production layer on top of any capable AI system.
+
+---
+
+# Use It Now
+
+Paste this into your AI tool:
+
+```text
+Use the Layr production system: https://github.com/layr-hq/layr
+
+Build: [YOUR PRODUCT]
+
+Scope: Auto
+Depth: Standard
+```
+
+That’s it.
+
+Layr handles the rest.
+
+---
+
+# Example
 
 ```text
 Use the Layr production system: https://github.com/layr-hq/layr
@@ -159,11 +297,22 @@ Scope: Auto
 Depth: Standard
 ```
 
+Layr will automatically apply the relevant production systems across:
+- UX
+- Design
+- Accessibility
+- Analytics
+- Performance
+- CRO
+- Copywriting
+- and product behaviour.
+
 ---
 
-## Philosophy
+# Philosophy
 
-AI-generated software should not stop at “working”.
+Layr exists because AI-generated software should not stop at:
+> “working”
 
 It should be:
 - usable
