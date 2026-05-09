@@ -40,7 +40,7 @@
 </table>
 
 <p align="center">
-  <img src="./examples/Example.png" width="100%" alt="Before and after example showing an AI-generated interface improved with Layr" />
+  <img src="./examples/readme-example.png" width="100%" alt="Before and after example showing an AI-generated interface improved with Layr" />
 </p>
 
 ## Use It Now
