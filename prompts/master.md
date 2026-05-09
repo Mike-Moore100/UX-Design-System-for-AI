@@ -16,15 +16,19 @@ If RUN.md is not available, follow this prompt directly.
 
 Read these files in order:
 
-1. `UX.md`
-2. `DESIGN.md`
+1. `modules/index.md`
+2. active module rule files: `UX.md` and `DESIGN.md`
 3. `methods/index.md`
-4. relevant files in `/methods`
-5. `scorecard.md`
-6. `layr.config.md`, if present
-7. relevant screen brief in `/screens`, if present
+4. relevant files in `methods/ux/`
+5. relevant files in `methods/design/`
+6. `scorecard.md`
+7. `layr.config.md`, if present
+8. relevant screen brief in `/screens`, if present
 
 Treat Layr files as strict rules, not suggestions.
+
+Apply active modules only.
+Do not treat planned modules as complete Layr systems until their rule files and methods exist.
 
 ---
 
@@ -49,7 +53,7 @@ Otherwise proceed and state assumptions briefly.
 ## Process
 
 1. Define the screen, user intent, primary goal, and primary action.
-2. Select relevant UX methods using `methods/index.md`.
+2. Select relevant UX and design methods using `methods/index.md`.
 3. Apply `UX.md` and `DESIGN.md` as strict constraints.
 4. Preserve the existing product design language unless the task asks for a redesign.
 5. Build or improve the UI.

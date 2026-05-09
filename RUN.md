@@ -11,7 +11,7 @@ Layr must work with zero setup, then improve when optional context is available.
 If the user provides only a task, proceed.
 
 Do not ask them to fill templates before work begins.
-Do not require edits to `UX.md`, `DESIGN.md`, `/methods`, or this file.
+Do not require edits to `UX.md`, `DESIGN.md`, `methods/`, or this file.
 
 ---
 
@@ -19,15 +19,32 @@ Do not require edits to `UX.md`, `DESIGN.md`, `/methods`, or this file.
 
 Read these files in order:
 
-1. `UX.md`
-2. `DESIGN.md`
+1. `modules/index.md`
+2. active module rule files: `UX.md` and `DESIGN.md`
 3. `methods/index.md`
-4. relevant files in `/methods`
-5. `scorecard.md`
-6. `layr.config.md`, if present
-7. relevant screen brief in `/screens`, if present
+4. relevant files in `methods/ux/`
+5. relevant files in `methods/design/`
+6. `scorecard.md`
+7. `layr.config.md`, if present
+8. relevant screen brief in `/screens`, if present
 
 If working from the GitHub repo URL, fetch the same files from the repository before applying the system.
+
+---
+
+## Module Policy
+
+Apply active modules only.
+
+Current active modules:
+
+- UX
+- Design
+
+Planned modules are listed in `modules/index.md` and `ROADMAP.md`.
+Do not treat planned modules as complete Layr systems until their rule files and methods exist.
+
+If a task would benefit from a planned module, apply the active UX and Design rules first.
 
 ---
 
@@ -88,7 +105,7 @@ If no screen brief exists, infer the screen intent from the task and codebase.
 For every task:
 
 1. Define the screen, user intent, primary goal, and primary action.
-2. Select relevant methods using `methods/index.md`.
+2. Select relevant UX and design methods using `methods/index.md`.
 3. Apply `UX.md` and `DESIGN.md` as strict constraints.
 4. Preserve the existing design language unless the task explicitly asks for a redesign.
 5. Build or improve the UI.

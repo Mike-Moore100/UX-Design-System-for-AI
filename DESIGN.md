@@ -29,6 +29,8 @@ Design must:
 - increase trust
 - make action obvious
 
+Use `methods/design/` for design-specific enforcement such as colour, typography, spacing, composition, contrast, component consistency, and motion.
+
 If the UI looks good but is harder to use → FAIL
 
 ===============================

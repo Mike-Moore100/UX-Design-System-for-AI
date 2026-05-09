@@ -7,6 +7,23 @@ Use GitHub Releases for public tagged releases.
 
 ---
 
+## [1.2.0] - 2026-05-09
+
+### Changed
+
+- Split methods into `methods/ux/` and `methods/design/`.
+- Updated `methods/index.md` to route AI tools between UX methods and design methods.
+- Moved visual design methods into `methods/design/`.
+- Added a module routing layer for active and planned Layr modules.
+
+### Added
+
+- Added design-specific methods for colour theory, typography, spacing rhythm, layout composition, contrast and emphasis, component consistency, and motion clarity.
+- Added `modules/index.md` to define active modules and planned modules.
+- Added `ROADMAP.md` to describe the future module direction.
+
+---
+
 ## [1.1.0] - 2026-05-09
 
 ### Changed

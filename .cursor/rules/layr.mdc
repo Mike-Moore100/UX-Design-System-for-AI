@@ -15,10 +15,13 @@ Ask at most 3 questions only when missing context would materially change the UX
 
 Apply:
 
+- `modules/index.md`
 - `UX.md`
 - `DESIGN.md`
 - `methods/index.md`
-- relevant files in `/methods`
+- relevant files in `methods/ux/`
+- relevant files in `methods/design/`
 - `scorecard.md`
 
 Preserve the existing design system unless the user explicitly asks for a redesign.
+Apply active Layr modules only.

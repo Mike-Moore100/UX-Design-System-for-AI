@@ -65,7 +65,7 @@ layr/layr.config.md
 
 3. Fill only what you know. Leave the rest blank.
 
-Do not edit `UX.md`, `DESIGN.md`, `/methods`, or `RUN.md`.
+Do not edit `UX.md`, `DESIGN.md`, `methods/`, or `RUN.md`.
 
 ### Option 4 - Add optional screen context
 
@@ -105,6 +105,7 @@ layr/screens/dashboard.md
 - [Why it matters](#why-it-matters)
 - [How the system works](#how-the-system-works)
 - [Quality modes](#quality-modes)
+- [Module roadmap](#module-roadmap)
 - [Instructions](#instructions)
 - [Files](#files)
 - [Version history](#version-history)
@@ -132,6 +133,9 @@ It turns proven principles into strict rules the AI must follow when building.
 - Gestalt - clear structure  
 - Signal vs Noise - remove clutter  
 - Default Bias - guide decisions  
+- Colour Theory - guide attention
+- Typography - improve readability
+- Spacing Rhythm - clarify structure
 - and more
 
 Most people know these.  
@@ -171,7 +175,7 @@ flowchart TD
     C --> E["UX.md rules"]
     D --> E
     E --> F["DESIGN.md rules"]
-    F --> G["Methods index + relevant methods"]
+    F --> G["Methods index + UX/design methods"]
     G --> H["Build or improve interface"]
     H --> I["Scorecard with evidence"]
     I --> J{"Score >= 85?"}
@@ -205,6 +209,24 @@ flowchart TD
 Layr should never block on missing context unless the missing detail would materially change the UX direction.
 
 If context is missing, the AI should infer it and state assumptions briefly.
+
+---
+
+## Module roadmap
+
+Layr currently ships with active UX and Design modules.
+
+The system is structured to expand into Accessibility, Conversion Rate Optimisation, SEO, Marketing, Copywriting, and other production modules over time.
+
+Those future modules are listed in `ROADMAP.md`, but they are not treated as active Layr systems until their rule files and methods exist.
+
+The user experience stays the same:
+
+```text
+Use Layr for this task:
+```
+
+Layr should choose the relevant active modules automatically.
 
 ---
 
@@ -309,14 +331,17 @@ The AI will:
 | File | Purpose | User edits? |
 | --- | --- | --- |
 | `RUN.md` | Main entry point for AI tools | No |
+| `modules/index.md` | Active and planned module routing | No |
 | `UX.md` | UX behaviour, rules, scoring, and validation | No |
 | `DESIGN.md` | Layout, hierarchy, spacing, and visual clarity | No |
 | `methods/index.md` | Helps the AI choose relevant methods | No |
-| `methods/*.md` | Individual UX methods and enforcement rules | No |
+| `methods/ux/*.md` | Behaviour, cognition, interaction, flow, and trust methods | No |
+| `methods/design/*.md` | Colour, type, layout, spacing, component, and motion methods | No |
 | `scorecard.md` | Evidence-based UX scoring | No |
 | `layr.config.example.md` | Optional product context template | Copy to `layr.config.md` |
 | `screens/screen-template.md` | Optional screen brief template | Copy for important screens |
 | `prompts/master.md` | Compatibility prompt for users who prefer `/prompts` | No |
+| `ROADMAP.md` | Future module direction | No |
 | `CHANGELOG.md` | Version history and release notes | No |
 
 ---

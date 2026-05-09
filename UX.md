@@ -69,8 +69,8 @@ Apply at all times:
 - Goal Gradient → show progress
 - Zeigarnik Effect → highlight incomplete
 - Default Bias → guide decisions
-- Signal vs Noise → remove clutter
-- Gestalt → group clearly
+- Information Scent → clarify direction
+- Feedback Loops → confirm action
 
 These are rules, not suggestions.
 
