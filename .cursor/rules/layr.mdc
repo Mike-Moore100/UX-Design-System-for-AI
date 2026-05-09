@@ -1,0 +1,24 @@
+---
+description: Apply the Layr UX and design rule system
+alwaysApply: false
+---
+
+# Layr
+
+When the user asks to use Layr, read `RUN.md` first.
+
+Do not require setup before working.
+Use `layr.config.md` and `/screens` briefs only when they exist.
+Infer missing context from the task and codebase.
+
+Ask at most 3 questions only when missing context would materially change the UX direction.
+
+Apply:
+
+- `UX.md`
+- `DESIGN.md`
+- `methods/index.md`
+- relevant files in `/methods`
+- `scorecard.md`
+
+Preserve the existing design system unless the user explicitly asks for a redesign.

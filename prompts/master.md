@@ -1,170 +1,97 @@
 # Master Prompt
 
-You are building and refining UI using the Layr system.
+Use the Layr system to build, review, or improve UI.
 
-You MUST follow ALL system files:
+Primary instruction:
 
-- UX.md (behaviour, flow, scoring)
-- Design.md (visual system, hierarchy, execution)
-- /methods (UX reasoning and decision logic)
-- /screens (screen definitions)
+```text
+Read RUN.md first, then follow it.
+```
 
-Treat these as strict rules, not suggestions.
-
-Do NOT override them.  
-Do NOT ignore them.  
-Do NOT invent your own design logic.
+If RUN.md is not available, follow this prompt directly.
 
 ---
 
-## CONTEXT
+## Load Order
 
-[TASK]:
-[USER TYPE]:
-[CORE GOAL]:
-[PRIMARY ACTION]:
+Read these files in order:
 
----
+1. `UX.md`
+2. `DESIGN.md`
+3. `methods/index.md`
+4. relevant files in `/methods`
+5. `scorecard.md`
+6. `layr.config.md`, if present
+7. relevant screen brief in `/screens`, if present
 
-## PROCESS (MANDATORY)
-
-1. Read UX.md fully  
-2. Read Design.md fully  
-3. Read relevant methods from /methods  
-4. Read the screen definition from /screens  
-
-5. Define structure using UX rules  
-6. Apply visual system using Design.md  
-7. Apply relevant UX methods (only where applicable)  
-
-8. Build the UI/UX solution  
-
-9. Score the result  
-10. Identify weaknesses  
-11. Improve  
-
-12. Repeat until score ≥ 85  
+Treat Layr files as strict rules, not suggestions.
 
 ---
 
-## UX SCORING
+## Context Policy
 
-Score every screen:
+Do not require the user to edit Layr files before using the system.
 
-- Clarity (0–20)
-- Cognitive Load (0–20)
-- Time to Value (0–20)
-- Hierarchy (0–15)
-- Feedback (0–10)
-- Accessibility (0–10)
-- Trust (0–5)
+Use context in this order:
 
-TOTAL: /100
+1. the user's task
+2. the existing codebase or product
+3. `layr.config.md`, if present
+4. screen briefs in `/screens`, if present
 
-PASS: ≥ 85  
-FAIL: < 85 → must improve  
+If context is missing, infer the most likely user, goal, and primary action.
 
----
-
-## DESIGN ENFORCEMENT
-
-All design decisions must:
-
-- have one clear focal point  
-- enforce strong visual hierarchy  
-- minimise cognitive load  
-- follow spacing system strictly  
-- use consistent components  
-- maintain accessible contrast  
-- remove all unnecessary elements  
-
-Design must:
-
-- guide attention  
-- reduce effort  
-- increase trust  
-- make the next action obvious  
-
-If design is visually nice but harder to use → FAIL  
+Ask at most 3 questions only when the missing information would materially change the UX direction.
+Otherwise proceed and state assumptions briefly.
 
 ---
 
-## UX ENFORCEMENT
+## Process
 
-Apply relevant principles:
-
-- Hick’s Law → reduce choices  
-- Cognitive Load → reduce thinking  
-- Fitts’s Law → improve interaction  
-- Gestalt → structure layout  
-- Attention Ratio → one focus  
-- Decision Fatigue → reduce decisions  
-- Default Bias → guide behaviour  
-- Feedback Loops → instant response  
-- Perceived Performance → fast feel  
-- Trust Signals → predictability  
-- Error Prevention → remove friction  
-- Information Scent → clear direction  
-
-Only apply what is relevant, but apply correctly.
+1. Define the screen, user intent, primary goal, and primary action.
+2. Select relevant UX methods using `methods/index.md`.
+3. Apply `UX.md` and `DESIGN.md` as strict constraints.
+4. Preserve the existing product design language unless the task asks for a redesign.
+5. Build or improve the UI.
+6. Score the result with `scorecard.md`.
+7. Fix weak areas.
+8. Repeat until the score is at least 85.
 
 ---
 
-## RULES
+## Non-Negotiables
 
-- one primary action per screen  
-- no competing actions  
-- no unnecessary decisions  
-- no decorative elements  
-- no random design decisions  
-- no inconsistent patterns  
-- no weak hierarchy  
+- one primary action per screen
+- no competing primary actions
+- no unnecessary decisions
+- no decorative elements that reduce clarity
+- no random design decisions
+- no inconsistent patterns
+- no weak hierarchy
+- no inaccessible interaction states
 
-Everything must feel:
-
-- structured  
-- intentional  
-- predictable  
-- effortless to use  
+Everything must feel structured, intentional, predictable, and effortless.
 
 ---
 
-## OUTPUT
+## Output
 
-Return ONLY:
+Return only:
 
-1. final improved solution  
-2. UX score (/100)  
-3. key improvements made  
+1. final improved solution
+2. UX score `/100`
+3. key improvements made
+4. assumptions, only if context was inferred
 
-Do NOT return first drafts  
-Do NOT return multiple options  
-Do NOT explain reasoning  
-
----
-
-## FAILURE CONDITIONS
-
-If the output:
-
-- feels cluttered  
-- lacks hierarchy  
-- requires thinking  
-- is visually inconsistent  
-- has weak contrast  
-- has unclear actions  
-
-→ it must be redesigned  
+Do not return first drafts.
+Do not return multiple options unless the user asks.
+Do not expose chain-of-thought reasoning.
 
 ---
 
-## FINAL RULE
+## Final Rule
 
-The system must produce UI that:
+The system must produce UI that reduces friction, builds trust, and drives action.
 
-- reduces friction  
-- builds trust  
-- drives action  
-
-If the user hesitates → it failed  
-If the user has to think → it failed
+If the user hesitates, it failed.
+If the user has to think, it failed.
