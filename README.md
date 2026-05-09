@@ -214,19 +214,23 @@ If context is missing, the AI should infer it and state assumptions briefly.
 
 ## Module roadmap
 
-Layr currently ships with active UX and Design modules.
+Layr starts with UX and Design because that is where AI-built products usually break first: unclear flows, weak hierarchy, messy screens, and interfaces that work but do not feel production-ready.
 
-The system is structured to expand into Accessibility, Conversion Rate Optimisation, SEO, Marketing, Copywriting, and other production modules over time.
+The bigger goal is to turn Layr into a full production layer for AI-built software.
 
-Those future modules are listed in `ROADMAP.md`, but they are not treated as active Layr systems until their rule files and methods exist.
+Future modules will cover Accessibility, Security, Conversion Rate Optimisation, SEO, Marketing, Copywriting, and other areas that separate a generated interface from a product people can actually trust, use, find, understand, and convert through.
 
-The user experience stays the same:
+The system is designed so these modules can be added without making Layr harder to use.
+
+The prompt stays simple:
 
 ```text
 Use Layr for this task:
 ```
 
-Layr should choose the relevant active modules automatically.
+Layr chooses the relevant active modules automatically.
+
+See `ROADMAP.md` for the planned module direction.
 
 ---
 

@@ -38,6 +38,21 @@ Planned coverage:
 - contrast
 - reduced motion
 
+### Security
+
+Production apps need safe defaults, clear permission boundaries, and careful handling of sensitive user actions.
+
+Planned coverage:
+
+- authentication flows
+- authorization and permissions
+- data handling
+- input validation
+- sensitive actions
+- audit trails
+- abuse prevention
+- secure defaults
+
 ### Conversion Rate Optimisation
 
 High-quality interfaces should not only look and feel better.

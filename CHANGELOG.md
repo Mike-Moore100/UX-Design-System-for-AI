@@ -19,7 +19,7 @@ Use GitHub Releases for public tagged releases.
 ### Added
 
 - Added design-specific methods for colour theory, typography, spacing rhythm, layout composition, contrast and emphasis, component consistency, and motion clarity.
-- Added `modules/index.md` to define active modules and planned modules.
+- Added `modules/index.md` to define active modules and planned modules, including Security.
 - Added `ROADMAP.md` to describe the future module direction.
 
 ---

@@ -70,6 +70,18 @@ Use when active for:
 - reduced motion
 - screen reader support
 
+### Security
+
+Use when active for:
+
+- authentication flows
+- permission boundaries
+- data handling
+- input validation
+- sensitive actions
+- abuse prevention
+- secure defaults
+
 ### Conversion Rate Optimisation
 
 Use when active for:
