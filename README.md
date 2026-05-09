@@ -84,7 +84,41 @@ Layr reads the task, selects the relevant modules, applies the correct methods, 
 
 Instead of blindly applying every rule, Layr intelligently routes the smallest set of modules that materially improve the task.
 
-mermaid flowchart LR  A[AI Request] --> B[Layr Task Analysis]  B --> C{Select Relevant Modules}  C --> D1[UX] C --> D2[Design] C --> D3[Accessibility] C --> D4[Security] C --> D5[Performance] C --> D6[QA] C --> D7[SEO] C --> D8[CRO] C --> D9[Analytics] C --> D10[AI Product] C --> D11[Copywriting]  D1 --> E[Apply Methods + Rules] D2 --> E D3 --> E D4 --> E D5 --> E D6 --> E D7 --> E D8 --> E D9 --> E D10 --> E D11 --> E  E --> F[Score Output] F --> G[Improve Weak Areas] G --> H[Production-Ready Result] 
+```mermaid
+flowchart LR
+  A["AI Request"] --> B["Layr Task Analysis"]
+  B --> C{"Select Relevant Modules"}
+
+  C --> D1["UX"]
+  C --> D2["Design"]
+  C --> D3["Accessibility"]
+  C --> D4["Security"]
+  C --> D5["Performance"]
+  C --> D6["QA"]
+  C --> D7["SEO"]
+  C --> D8["CRO"]
+  C --> D9["Analytics"]
+  C --> D10["AI Product"]
+  C --> D11["Marketing"]
+  C --> D12["Copywriting"]
+
+  D1 --> E["Apply Methods + Rules"]
+  D2 --> E
+  D3 --> E
+  D4 --> E
+  D5 --> E
+  D6 --> E
+  D7 --> E
+  D8 --> E
+  D9 --> E
+  D10 --> E
+  D11 --> E
+  D12 --> E
+
+  E --> F["Score Output"]
+  F --> G["Improve Weak Areas"]
+  G --> H["Production-Ready Result"]
+```
 
 ---
 
@@ -94,15 +128,37 @@ Layr supports controlled invocation through:
 
 ## Scope
 
-text id="slqu1h" Auto UX Design Accessibility Security Performance Analytics QA AI Product CRO SEO AI Search Marketing Copywriting 
+```text
+Auto
+UX
+Design
+Accessibility
+Security
+Performance
+Analytics
+QA
+AI Product
+CRO
+SEO
+AI Search
+Marketing
+Copywriting
+```
 
 ## Depth
 
-text id="u0a3qa" Quick Standard Deep 
+```text
+Quick
+Standard
+Deep
+```
 
 ## Default
 
-text id="vlw6vf" Scope: Auto Depth: Standard 
+```text
+Scope: Auto
+Depth: Standard
+```
 
 This allows Layr to act as:
 - selective
@@ -199,7 +255,14 @@ It works as a production layer on top of any capable AI system.
 
 Paste this into your AI tool:
 
-text id="r4vv74" Use the Layr production system: https://github.com/layr-hq/layr  Build: [YOUR PRODUCT]  Scope: Auto Depth: Standard 
+```text
+Use the Layr production system: https://github.com/layr-hq/layr
+
+Build: [YOUR PRODUCT]
+
+Scope: Auto
+Depth: Standard
+```
 
 That’s it.
 
@@ -209,7 +272,14 @@ Layr handles the rest.
 
 # Example
 
-text id="8ezc3f" Use the Layr production system: https://github.com/layr-hq/layr  Build: An AI-powered finance dashboard for freelancers.  Scope: Auto Depth: Standard 
+```text
+Use the Layr production system: https://github.com/layr-hq/layr
+
+Build: An AI-powered finance dashboard for freelancers.
+
+Scope: Auto
+Depth: Standard
+```
 
 Layr will automatically apply the relevant production systems across:
 - UX
