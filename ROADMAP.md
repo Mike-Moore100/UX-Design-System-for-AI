@@ -1,6 +1,6 @@
 # Roadmap
 
-Layr's current public system is focused on UX and Design.
+Layr's current public system is focused on production-grade AI-built interfaces.
 
 The long-term direction is a modular AI product system for production-grade apps and websites.
 
@@ -20,15 +20,13 @@ Status: Active
 
 Improves visual hierarchy, colour, typography, spacing, layout, components, motion, and design system consistency.
 
----
-
-## Planned
-
 ### Accessibility
 
-Production interfaces must be usable by everyone.
+Status: Active
 
-Planned coverage:
+Improves inclusive access, keyboard navigation, focus behaviour, semantic structure, and recoverable errors.
+
+Coverage:
 
 - WCAG checks
 - keyboard navigation
@@ -40,9 +38,11 @@ Planned coverage:
 
 ### Security
 
-Production apps need safe defaults, clear permission boundaries, and careful handling of sensitive user actions.
+Status: Active
 
-Planned coverage:
+Improves safe defaults, clear permission boundaries, validation, auth flows, and careful handling of sensitive user actions.
+
+Coverage:
 
 - authentication flows
 - authorization and permissions
@@ -53,12 +53,69 @@ Planned coverage:
 - abuse prevention
 - secure defaults
 
+### Performance
+
+Status: Active
+
+Improves speed, loading, interaction responsiveness, rendering stability, and asset discipline.
+
+Coverage:
+
+- performance budgets
+- loading strategy
+- interaction responsiveness
+- rendering stability
+- asset optimisation
+
+### Analytics
+
+Status: Active
+
+Improves product measurement, funnels, activation, experiments, and privacy-aware analytics.
+
+Coverage:
+
+- event taxonomy
+- funnel instrumentation
+- activation metrics
+- experiment measurement
+- privacy-aware analytics
+
+### QA
+
+Status: Active
+
+Improves release confidence, regression checks, responsive quality, browser risk, and edge-case coverage.
+
+Coverage:
+
+- responsive QA
+- cross-browser QA
+- edge-case states
+- regression checklists
+- release readiness
+
+### AI Product
+
+Status: Active
+
+Improves AI input quality, output trust, human control, fallback states, and model evaluation.
+
+Coverage:
+
+- prompt input design
+- output trust
+- human control
+- AI fallbacks
+- AI evaluation
+
 ### Conversion Rate Optimisation
 
-High-quality interfaces should not only look and feel better.
-They should move users toward meaningful action.
+Status: Active
 
-Planned coverage:
+Improves value clarity, proof, risk reversal, CTA specificity, and funnel friction.
+
+Coverage:
 
 - landing pages
 - pricing pages
@@ -70,22 +127,27 @@ Planned coverage:
 
 ### SEO
 
-Public pages need to be understandable to users and search engines.
+Status: Active
 
-Planned coverage:
+Improves public page intent, crawlability, semantic structure, metadata, AI search visibility, internal linking, and performance.
+
+Coverage:
 
 - metadata
 - semantic HTML
 - content structure
 - crawlability
 - search intent
+- AI search and answer-engine visibility
 - internal linking
 
 ### Marketing
 
-Product experiences need clear positioning and value communication.
+Status: Active
 
-Planned coverage:
+Improves positioning, audience fit, offers, message hierarchy, and differentiation.
+
+Coverage:
 
 - audience clarity
 - value propositions
@@ -96,9 +158,11 @@ Planned coverage:
 
 ### Copywriting
 
-Interface copy should reduce hesitation and make action obvious.
+Status: Active
 
-Planned coverage:
+Improves clarity, specificity, jobs-to-be-done copy, microcopy, and CTA copy.
+
+Coverage:
 
 - headlines
 - CTAs
@@ -107,6 +171,19 @@ Planned coverage:
 - empty states
 - onboarding copy
 - persuasive clarity
+
+---
+
+## Planned
+
+Future modules should be added only when they can include rule files, methods, routing, and validation.
+
+Possible future modules:
+
+- Data Visualisation
+- Internationalisation
+- Privacy
+- Compliance
 
 ---
 

@@ -75,26 +75,20 @@ Apply at all times:
 These are rules, not suggestions.
 
 ===============================
-UX SCORING (MANDATORY)
+UX VALIDATION (MANDATORY)
 ===============================
 
-Score every screen out of 100:
+Use `scorecard.md` for the final Layr score.
 
-- Clarity (0–20)
-- Cognitive Load (0–20)
-- Time to Value (0–20)
-- Hierarchy (0–15)
-- Feedback (0–10)
-- Accessibility (0–10)
-- Trust (0–5)
+UX must contribute evidence for:
 
-TOTAL: /100
-
-PASS: ≥ 85  
-FAIL: < 85 → must improve
-
-Use scorecard.md for evidence-based scoring.
-A score is invalid unless it reflects the actual interface, not the intention.
+- clarity
+- cognitive load
+- time to value
+- task flow
+- feedback
+- primary action strength
+- user trust
 
 -------------------------------
 

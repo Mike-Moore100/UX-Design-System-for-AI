@@ -13,6 +13,7 @@ Product name:
 Primary user:
 Core user goal:
 Primary product action:
+Conversion goal:
 
 ---
 
@@ -31,8 +32,52 @@ Use existing product design:
 
 Platform:
 Accessibility requirements:
+Security-sensitive data:
+Supported browsers/devices:
 Business priority:
 Things to avoid:
+
+---
+
+## Performance
+
+Critical journey:
+Performance target:
+Known slow areas:
+
+---
+
+## Analytics
+
+Analytics goal:
+Primary metric:
+Key funnel:
+Experiment goal:
+
+---
+
+## AI Product
+
+AI feature goal:
+AI output risk:
+Human review required:
+
+---
+
+## Discoverability
+
+Target search query:
+Target search intent:
+AI search goal:
+Important entities:
+
+---
+
+## Messaging
+
+Brand voice:
+Known objections:
+Proof available:
 
 ---
 

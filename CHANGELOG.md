@@ -7,19 +7,42 @@ Use GitHub Releases for public tagged releases.
 
 ---
 
+## [1.3.0] - 2026-05-09
+
+### Added
+
+- Added 10 additional methods to each active Layr category: UX, Design, Accessibility, Security, CRO, SEO, Marketing, and Copywriting.
+- Added `methods/seo/ai-search-visibility.md` for AI answer, ChatGPT search, Copilot, GEO, and answer-engine visibility.
+- Added active Performance, Analytics, QA, and AI Product module rule files.
+- Added 5 launch-critical methods each for Performance, Analytics, QA, and AI Product.
+- Added `Scope:` and `Depth:` controls so users can invoke only the modules and method depth they need.
+- Expanded `methods/index.md` so AI tools can route across the full method library by category, surface type, and problem type.
+
+### Changed
+
+- Strengthened method routing for landing pages, onboarding, pricing, forms, public content, sensitive flows, vague copy, hesitation points, audience scaling, and unfinished interface states.
+- Updated README, RUN, master prompt, and AI-tool entry files to default to `Scope: Auto` and `Depth: Standard`.
+- Expanded optional context fields without making setup mandatory.
+
+---
+
 ## [1.2.0] - 2026-05-09
+
+### Added
+
+- Added active Accessibility, Security, CRO, SEO, Marketing, and Copywriting module rule files.
+- Added 5 methods each for Accessibility, Security, CRO, SEO, Marketing, and Copywriting.
+- Updated `methods/index.md` to route across all active production modules.
+- Updated `scorecard.md` from UX-only scoring to modular Layr scoring.
 
 ### Changed
 
 - Split methods into `methods/ux/` and `methods/design/`.
 - Updated `methods/index.md` to route AI tools between UX methods and design methods.
 - Moved visual design methods into `methods/design/`.
-- Added a module routing layer for active and planned Layr modules.
-
-### Added
-
+- Expanded the module routing layer across all active Layr modules.
 - Added design-specific methods for colour theory, typography, spacing rhythm, layout composition, contrast and emphasis, component consistency, and motion clarity.
-- Added `modules/index.md` to define active modules and planned modules, including Security.
+- Added `modules/index.md` to define active modules and selection rules.
 - Added `ROADMAP.md` to describe the future module direction.
 
 ---

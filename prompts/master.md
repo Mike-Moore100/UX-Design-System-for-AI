@@ -17,18 +17,52 @@ If RUN.md is not available, follow this prompt directly.
 Read these files in order:
 
 1. `modules/index.md`
-2. active module rule files: `UX.md` and `DESIGN.md`
+2. active module rule files relevant to the task
 3. `methods/index.md`
-4. relevant files in `methods/ux/`
-5. relevant files in `methods/design/`
-6. `scorecard.md`
-7. `layr.config.md`, if present
-8. relevant screen brief in `/screens`, if present
+4. relevant method files
+5. `scorecard.md`
+6. `layr.config.md`, if present
+7. relevant screen brief in `/screens`, if present
 
 Treat Layr files as strict rules, not suggestions.
 
-Apply active modules only.
-Do not treat planned modules as complete Layr systems until their rule files and methods exist.
+Apply only the modules that materially improve the current task.
+Respect `Scope:` and `Depth:` when the user provides them.
+If they are missing, use `Scope: Auto` and `Depth: Standard`.
+
+---
+
+## Scope And Depth
+
+Use `Scope:` to choose modules.
+Use `Depth:` to choose how much of Layr to apply.
+
+Supported scope values:
+
+- `Auto`
+- `UX`
+- `Design`
+- `Accessibility`
+- `Security`
+- `Performance`
+- `Analytics`
+- `QA`
+- `AI Product`
+- `CRO`
+- `SEO`
+- `AI Search`
+- `Marketing`
+- `Copywriting`
+
+`AI Search` maps to SEO and specifically includes `methods/seo/ai-search-visibility.md`.
+
+Supported depth values:
+
+- `Quick` - 2-4 methods
+- `Standard` - 4-8 methods
+- `Deep` - 8-14 methods
+
+Do not load the whole method library unless the user asks for a full audit.
 
 ---
 
@@ -39,13 +73,15 @@ Do not require the user to edit Layr files before using the system.
 Use context in this order:
 
 1. the user's task
-2. the existing codebase or product
-3. `layr.config.md`, if present
-4. screen briefs in `/screens`, if present
+2. explicit `Scope:` and `Depth:`, if provided
+3. optional context block in the prompt, if provided
+4. the existing codebase or product
+5. `layr.config.md`, if present
+6. screen briefs in `/screens`, if present
 
 If context is missing, infer the most likely user, goal, and primary action.
 
-Ask at most 3 questions only when the missing information would materially change the UX direction.
+Ask at most 3 questions only when the missing information would materially change the product direction.
 Otherwise proceed and state assumptions briefly.
 
 ---
@@ -53,13 +89,15 @@ Otherwise proceed and state assumptions briefly.
 ## Process
 
 1. Define the screen, user intent, primary goal, and primary action.
-2. Select relevant UX and design methods using `methods/index.md`.
-3. Apply `UX.md` and `DESIGN.md` as strict constraints.
-4. Preserve the existing product design language unless the task asks for a redesign.
-5. Build or improve the UI.
-6. Score the result with `scorecard.md`.
-7. Fix weak areas.
-8. Repeat until the score is at least 85.
+2. Read the user's `Scope:` and `Depth:` values, or use the defaults.
+3. Select relevant modules using `modules/index.md`.
+4. Select relevant methods using `methods/index.md` within the chosen depth.
+5. Apply relevant module rule files as strict constraints.
+6. Preserve the existing product design language unless the task asks for a redesign.
+7. Build or improve the UI.
+8. Score the result with `scorecard.md`.
+9. Fix weak areas.
+10. Repeat until the score is at least 85.
 
 ---
 
@@ -83,7 +121,7 @@ Everything must feel structured, intentional, predictable, and effortless.
 Return only:
 
 1. final improved solution
-2. UX score `/100`
+2. Layr score `/100`
 3. key improvements made
 4. assumptions, only if context was inferred
 

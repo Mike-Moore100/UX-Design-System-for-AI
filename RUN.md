@@ -11,7 +11,14 @@ Layr must work with zero setup, then improve when optional context is available.
 If the user provides only a task, proceed.
 
 Do not ask them to fill templates before work begins.
-Do not require edits to `UX.md`, `DESIGN.md`, `methods/`, or this file.
+Do not require edits to module files, `methods/`, or this file.
+
+Default to:
+
+```text
+Scope: Auto
+Depth: Standard
+```
 
 ---
 
@@ -20,31 +27,111 @@ Do not require edits to `UX.md`, `DESIGN.md`, `methods/`, or this file.
 Read these files in order:
 
 1. `modules/index.md`
-2. active module rule files: `UX.md` and `DESIGN.md`
+2. active module rule files relevant to the task
 3. `methods/index.md`
-4. relevant files in `methods/ux/`
-5. relevant files in `methods/design/`
-6. `scorecard.md`
-7. `layr.config.md`, if present
-8. relevant screen brief in `/screens`, if present
+4. relevant method files
+5. `scorecard.md`
+6. `layr.config.md`, if present
+7. relevant screen brief in `/screens`, if present
 
 If working from the GitHub repo URL, fetch the same files from the repository before applying the system.
 
 ---
 
+## Scope Control
+
+Users may control which parts of Layr run by adding `Scope:` to the prompt.
+
+If no scope is provided, use `Scope: Auto`.
+
+Supported scope values:
+
+- `Auto` - infer the smallest relevant module set from the task
+- `UX`
+- `Design`
+- `Accessibility`
+- `Security`
+- `Performance`
+- `Analytics`
+- `QA`
+- `AI Product`
+- `CRO`
+- `SEO`
+- `AI Search`
+- `Marketing`
+- `Copywriting`
+- any comma-separated combination of the above
+
+Examples:
+
+```text
+Scope: UX, CRO, Copywriting
+```
+
+```text
+Scope: SEO, AI Search
+```
+
+Scope rules:
+
+- do not run every module unless the user asks for a full audit
+- if the user provides explicit scope, respect it
+- add a missing module only when it is required to avoid a serious quality, safety, accessibility, or implementation failure
+- if adding a missing module, state the assumption briefly
+- `AI Search` maps to SEO and specifically includes `methods/seo/ai-search-visibility.md`
+
+---
+
+## Depth Control
+
+Users may control how deeply Layr runs by adding `Depth:` to the prompt.
+
+If no depth is provided, use `Depth: Standard`.
+
+Supported depth values:
+
+- `Quick` - use 2-4 methods, focus on the biggest visible issue
+- `Standard` - use 4-8 methods, suitable for normal product work
+- `Deep` - use 8-14 methods, suitable for important screens, audits, launches, SEO, security, AI features, performance-critical paths, or conversion-critical flows
+
+Depth rules:
+
+- never load the whole method library by default
+- load only the selected module files
+- load only method files that materially affect the task
+- use deeper analysis only when requested or when the surface is high risk
+
+---
+
 ## Module Policy
 
-Apply active modules only.
+Apply only the modules that materially improve the current task.
 
 Current active modules:
 
 - UX
 - Design
+- Accessibility
+- Security
+- Performance
+- Analytics
+- QA
+- AI Product
+- Conversion Rate Optimisation
+- SEO
+- Marketing
+- Copywriting
 
-Planned modules are listed in `modules/index.md` and `ROADMAP.md`.
-Do not treat planned modules as complete Layr systems until their rule files and methods exist.
+`AI Search` is an SEO scope, not a separate module.
 
-If a task would benefit from a planned module, apply the active UX and Design rules first.
+Default for product UI:
+
+1. UX
+2. Design
+3. Accessibility
+
+Add specialist modules only when the surface requires them.
+Use `modules/index.md` and `methods/index.md` to route the task.
 
 ---
 
@@ -53,13 +140,15 @@ If a task would benefit from a planned module, apply the active UX and Design ru
 Use context in this order:
 
 1. the user's task
-2. the existing codebase or product
-3. `layr.config.md`, if present
-4. screen briefs in `/screens`, if present
+2. explicit `Scope:` and `Depth:`, if provided
+3. optional context block in the prompt, if provided
+4. the existing codebase or product
+5. `layr.config.md`, if present
+6. screen briefs in `/screens`, if present
 
 Infer missing context when it is reasonably clear.
 
-Ask at most 3 questions only when missing information would materially change the UX direction, such as:
+Ask at most 3 questions only when missing information would materially change the product direction, such as:
 
 - the primary user is ambiguous
 - the primary action is ambiguous
@@ -83,6 +172,7 @@ Task:
 ```
 
 Infer product context from the repo and task.
+Use `Scope: Auto` and `Depth: Standard` unless the user specifies otherwise.
 
 ### Recommended
 
@@ -105,13 +195,15 @@ If no screen brief exists, infer the screen intent from the task and codebase.
 For every task:
 
 1. Define the screen, user intent, primary goal, and primary action.
-2. Select relevant UX and design methods using `methods/index.md`.
-3. Apply `UX.md` and `DESIGN.md` as strict constraints.
-4. Preserve the existing design language unless the task explicitly asks for a redesign.
-5. Build or improve the UI.
-6. Score the result with `scorecard.md`.
-7. Fix weak areas.
-8. Repeat until the score is at least 85.
+2. Read the user's `Scope:` and `Depth:` values, or use the defaults.
+3. Select relevant modules using `modules/index.md`.
+4. Select relevant methods using `methods/index.md` within the chosen depth.
+5. Apply active module rule files as strict constraints.
+6. Preserve the existing design language unless the task explicitly asks for a redesign.
+7. Build or improve the UI.
+8. Score the result with `scorecard.md`.
+9. Fix weak areas.
+10. Repeat until the score is at least 85.
 
 ---
 
@@ -137,7 +229,7 @@ If no design system exists:
 Return only:
 
 1. final improved solution
-2. UX score `/100`
+2. Layr score `/100`
 3. key improvements made
 4. assumptions, only when context was inferred
 

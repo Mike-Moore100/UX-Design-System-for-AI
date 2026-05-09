@@ -1,5 +1,5 @@
 ---
-description: Apply the Layr UX and design rule system
+description: Apply the Layr modular product quality system
 alwaysApply: false
 ---
 
@@ -10,18 +10,18 @@ When the user asks to use Layr, read `RUN.md` first.
 Do not require setup before working.
 Use `layr.config.md` and `/screens` briefs only when they exist.
 Infer missing context from the task and codebase.
+Use `Scope: Auto` and `Depth: Standard` unless the user specifies otherwise.
+Respect explicit `Scope:` and `Depth:` values when provided.
 
-Ask at most 3 questions only when missing context would materially change the UX direction.
+Ask at most 3 questions only when missing context would materially change the product direction.
 
 Apply:
 
 - `modules/index.md`
-- `UX.md`
-- `DESIGN.md`
+- relevant module rule files
 - `methods/index.md`
-- relevant files in `methods/ux/`
-- relevant files in `methods/design/`
+- relevant method files
 - `scorecard.md`
 
 Preserve the existing design system unless the user explicitly asks for a redesign.
-Apply active Layr modules only.
+Apply only the Layr modules that materially improve the task.
