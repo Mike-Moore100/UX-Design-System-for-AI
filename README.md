@@ -260,7 +260,7 @@ Scope: Auto
 Depth: Standard
 ```
 
-Layr chooses the relevant active modules automatically, so users do not need to understand the whole system before getting value.
+Layr chooses the relevant active modules automatically, so you don't have to understand the whole system.
 
 See `ROADMAP.md` for the planned module direction.
 
