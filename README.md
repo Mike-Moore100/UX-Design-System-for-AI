@@ -2,6 +2,8 @@
 
 A modular production system for turning AI-built interfaces into production-grade apps. Layr turns proven UX, design, accessibility, security, performance, SEO, CRO, marketing, and copywriting principles into enforceable constraints that reduce friction, build trust, and drive action.
 
+Works with Claude, Codex, Cursor + all other agentic AI models.
+
 ## Before vs After
 
 Turn typical AI output into a clearer, more usable, more production-ready interface.
