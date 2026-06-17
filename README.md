@@ -118,6 +118,7 @@ layr/screens/dashboard.md
 - [Why it matters](#why-it-matters)
 - [How the system works](#how-the-system-works)
 - [System kernel](#system-kernel)
+- [Surface playbooks](#surface-playbooks)
 - [Quality modes](#quality-modes)
 - [Module system](#module-system)
 - [Instructions](#instructions)
@@ -249,7 +250,7 @@ If context is missing, Layr should infer it and state assumptions briefly.
 
 `SYSTEM.md` is Layr's central operating layer.
 
-It defines how the system selects surface types, applies hard gates, resolves method conflicts, and keeps recommendations tied to evidence.
+It defines how the system selects surface types, loads playbooks, applies hard gates, resolves method conflicts, and keeps recommendations tied to evidence.
 
 The kernel improves consistency across tasks by requiring every recommendation to connect to at least one of:
 
@@ -260,6 +261,26 @@ The kernel improves consistency across tasks by requiring every recommendation t
 - a measurable production risk
 
 This keeps Layr science backed, evidence driven, and focused on production quality rather than taste.
+
+---
+
+## Surface playbooks
+
+Surface playbooks make Layr practical for common production work.
+
+They define the required modules, recommended methods, hard gates, production rules, failure patterns, and evidence requirements for each major surface.
+
+Current playbooks cover:
+
+- pricing
+- signup and onboarding
+- dashboards and workspaces
+- forms and settings
+- checkout and upgrade
+- public pages and docs
+- AI features
+
+Surface scorecards in `scorecards/` make scoring more specific and consistent for each surface.
 
 ---
 
@@ -384,6 +405,7 @@ This is optional. Layr should infer missing screen context from the task and cod
 Layr will:
 
 - read the system kernel
+- load the relevant surface playbook
 - read Layr rules
 - select relevant methods
 - infer missing context when safe
@@ -401,6 +423,8 @@ Layr will:
 | --- | --- | --- |
 | `SYSTEM.md` | Central operating layer for surface selection, hard gates, conflict rules, and evidence standards | No |
 | `RUN.md` | Main execution entry point for agentic tools | No |
+| `playbooks/index.md` | Surface playbook routing | No |
+| `playbooks/*.md` | Production playbooks for common product surfaces | No |
 | `modules/index.md` | Active and planned module routing | No |
 | `modules/ux.md` | UX behaviour, rules, scoring, and validation | No |
 | `modules/design.md` | Layout, hierarchy, spacing, and visual clarity | No |
@@ -414,9 +438,11 @@ Layr will:
 | `modules/seo.md` | SEO and AI Search rules | No |
 | `modules/marketing.md` | Positioning and messaging rules | No |
 | `modules/copywriting.md` | Copy clarity and persuasion rules | No |
-| `methods/index.md` | Helps the AI choose relevant methods | No |
+| `methods/index.md` | Routes relevant methods by scope, surface, and problem | No |
 | `methods/*/*.md` | Science-backed production methods by module | No |
 | `scorecard.md` | Evidence-based UX scoring | No |
+| `scorecards/index.md` | Surface-specific scorecard routing | No |
+| `scorecards/*.md` | Surface-specific evidence scoring templates | No |
 | `layr.config.example.md` | Optional product context template | Copy to `layr.config.md` |
 | `screens/screen-template.md` | Optional screen brief template | Copy for important screens |
 | `prompts/master.md` | Compatibility prompt for users who prefer `/prompts` | No |

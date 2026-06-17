@@ -12,12 +12,14 @@ Use GitHub Releases for public tagged releases.
 ### Added
 
 - Added `SYSTEM.md` as the central Layr operating layer for surface selection, hard gates, conflict rules, evidence standards, and output contracts.
+- Added `playbooks/` with production playbooks for pricing, signup and onboarding, dashboards and workspaces, forms and settings, checkout and upgrade, public pages and docs, and AI features.
+- Added `scorecards/` with surface-specific scoring templates and hard cap rules for common product surfaces.
 
 ### Changed
 
 - Updated `RUN.md` so the System Kernel is first in the load order.
-- Updated `README.md` to explain the System Kernel and make setup prompts load it before execution.
-- Updated `ROADMAP.md` to list the System Kernel as an active production layer.
+- Updated `README.md` to explain the System Kernel, surface playbooks, and surface scorecards.
+- Updated `ROADMAP.md` to list the System Kernel, Surface Playbooks, and Surface Scorecards as active production layers.
 - Generalized tool references in touched documentation so the system stays tool-neutral.
 
 ---
@@ -68,7 +70,7 @@ Use GitHub Releases for public tagged releases.
 ### Changed
 
 - Replaced manual placeholder setup with a zero-setup flow.
-- Added `RUN.md` as the main AI entry point.
+- Added `RUN.md` as the main execution entry point.
 - Updated the README to support repo URL usage first and local folder usage second.
 - Made `layr.config.md` optional instead of required.
 - Made screen briefs optional instead of required.

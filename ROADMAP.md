@@ -12,16 +12,46 @@ The long-term direction is a modular AI product system for production-grade apps
 
 Status: Active
 
-Defines Layr's central operating layer for surface selection, hard gates, conflict rules, evidence standards, and output contracts.
+Defines Layr's central operating layer for surface selection, playbook loading, hard gates, conflict rules, evidence standards, and output contracts.
 
 Coverage:
 
 - surface type detection
+- playbook selection
 - module selection defaults
 - hard gate matrix
 - method conflict rules
 - evidence standard
 - production output contract
+
+### Surface Playbooks
+
+Status: Active
+
+Turns the system kernel into direct production guidance for common product surfaces.
+
+Coverage:
+
+- pricing
+- signup and onboarding
+- dashboards and workspaces
+- forms and settings
+- checkout and upgrade
+- public pages and docs
+- AI features
+
+### Surface Scorecards
+
+Status: Active
+
+Adds surface-specific scoring so quality judgments are more consistent and evidence based.
+
+Coverage:
+
+- surface-specific categories
+- hard cap rules
+- required evidence
+- stricter scoring when surface risk is high
 
 ### UX
 

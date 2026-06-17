@@ -27,13 +27,16 @@ Depth: Standard
 Read these files in order:
 
 1. `SYSTEM.md`
-2. `modules/index.md`
-3. active module rule files in `modules/` relevant to the task
-4. `methods/index.md`
-5. relevant method files
-6. `scorecard.md`
-7. `layr.config.md`, if present
-8. relevant screen brief in `/screens`, if present
+2. `playbooks/index.md`
+3. relevant surface playbook in `playbooks/`
+4. `modules/index.md`
+5. active module rule files in `modules/` relevant to the task
+6. `methods/index.md`
+7. relevant method files
+8. `scorecard.md`
+9. relevant surface scorecard in `scorecards/`, if present
+10. `layr.config.md`, if present
+11. relevant screen brief in `/screens`, if present
 
 If working from the GitHub repo URL, fetch the same files from the repository before applying the system.
 
@@ -198,14 +201,15 @@ For every task:
 1. Define the surface type, user intent, primary goal, and primary action.
 2. Read the user's `Scope:` and `Depth:` values, or use the defaults.
 3. Use `SYSTEM.md` to identify hard gates and conflict rules.
-4. Select relevant modules using `modules/index.md`.
-5. Select relevant methods using `methods/index.md` within the chosen depth.
-6. Apply active module rule files from `modules/` as strict constraints.
-7. Preserve the existing design language unless the task explicitly asks for a redesign.
-8. Build or improve the UI.
-9. Score the result with `scorecard.md`.
-10. Fix weak areas.
-11. Repeat until the score is at least 85.
+4. Load the relevant surface playbook from `playbooks/`.
+5. Select relevant modules using `modules/index.md`.
+6. Select relevant methods using `methods/index.md` within the chosen depth.
+7. Apply active module rule files from `modules/` as strict constraints.
+8. Preserve the existing design language unless the task explicitly asks for a redesign.
+9. Build or improve the UI.
+10. Score the result with `scorecard.md` and the relevant surface scorecard when present.
+11. Fix weak areas.
+12. Repeat until the score is at least 85.
 
 ---
 
@@ -232,10 +236,11 @@ Return only:
 
 1. final improved solution
 2. Layr score `/100`
-3. selected modules and methods
-4. hard gates checked
-5. key improvements made
-6. assumptions, only when context was inferred
+3. selected playbook, when used
+4. selected modules and methods
+5. hard gates checked
+6. key improvements made
+7. assumptions, only when context was inferred
 
 For code tasks, implement the change directly when possible.
 

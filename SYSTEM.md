@@ -30,13 +30,16 @@ If a recommendation cannot explain what user problem it solves, what risk it red
 Read these files in order:
 
 1. `SYSTEM.md`
-2. `modules/index.md`
-3. relevant module files
-4. `methods/index.md`
-5. relevant method files
-6. `scorecard.md`
-7. `layr.config.md`, if present
-8. relevant screen brief in `/screens`, if present
+2. `playbooks/index.md`
+3. relevant surface playbook in `playbooks/`
+4. `modules/index.md`
+5. relevant module files
+6. `methods/index.md`
+7. relevant method files
+8. `scorecard.md`
+9. relevant surface scorecard in `scorecards/`, if present
+10. `layr.config.md`, if present
+11. relevant screen brief in `/screens`, if present
 
 Use the smallest module and method set that protects production quality.
 
@@ -65,6 +68,24 @@ Supported surface types:
 - launch or release review
 
 If the surface is mixed, apply the hard gates for every high-risk part of the flow.
+
+---
+
+## Playbook Selection
+
+After identifying the surface, load the matching playbook:
+
+- pricing page: `playbooks/pricing.md`
+- signup, login, or onboarding: `playbooks/signup-onboarding.md`
+- dashboard or workspace: `playbooks/dashboards-workspaces.md`
+- form or settings: `playbooks/forms-settings.md`
+- checkout or upgrade: `playbooks/checkout-upgrade.md`
+- public page or docs: `playbooks/public-pages-docs.md`
+- AI feature: `playbooks/ai-features.md`
+
+Use one primary playbook unless the task crosses a meaningful production boundary.
+
+Use the matching surface scorecard after the main scorecard when the surface has a specific scoring file.
 
 ---
 
@@ -230,6 +251,8 @@ Personalisation must never feel invasive or expose sensitive assumptions.
 
 Every final output must include:
 
+- surface type
+- selected playbook, when used
 - selected modules
 - selected methods
 - hard gates checked
@@ -249,23 +272,24 @@ For implementation tasks, return:
 
 1. what changed
 2. Layr score
-3. selected modules
-4. selected methods
-5. hard gates checked
-6. remaining risks, if any
+3. selected playbook, when used
+4. selected modules
+5. selected methods
+6. hard gates checked
+7. remaining risks, if any
 
 For review tasks, return:
 
 1. findings by priority
 2. evidence
 3. recommended fixes
-4. relevant modules and methods
+4. relevant playbook, modules, and methods
 5. score, when applicable
 
 For content or strategy tasks, return:
 
 1. final content or recommendation
-2. selected modules and methods
+2. selected playbook, modules, and methods
 3. evidence basis
 4. assumptions, if any
 5. next production check
