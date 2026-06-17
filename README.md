@@ -2,9 +2,9 @@
 
 A modular production system for turning AI-built interfaces into production-grade apps. Layr turns proven UX, design, accessibility, security, performance, SEO, CRO, marketing, and copywriting principles into enforceable constraints that reduce friction, build trust, and drive action.
 
-Works with Claude, Codex, Cursor + all other agentic AI models.
+Works with Claude, Cursor, and other agentic development tools.
 
-Join the Reddit community for updates, ideas and feedback from other builders using Claude, Codex, Cursor and modern AI workflows.
+Join the Reddit community for updates, ideas and feedback from other builders using modern agentic workflows.
 
 reddit.com/r/Layr
 
@@ -20,18 +20,18 @@ Turn typical AI output into a clearer, more usable, more production-ready interf
 
 Layr works with zero setup.
 
-Start with Option 1. If your AI tool cannot read GitHub URLs, use Option 2.
+Start with Option 1. If your tool cannot read GitHub URLs, use Option 2.
 
 ### Option 1 - Paste the repo URL
 
-Use this when your AI tool can read GitHub URLs.
+Use this when your tool can read GitHub URLs.
 
-Copy this prompt, paste it into your AI model, then replace the task line with your own request:
+Copy this prompt, paste it into your tool, then replace the task line with your own request:
 
 ```text
 Use https://github.com/layr-hq/layr as the production system for AI-built apps.
 
-Read RUN.md first, then follow it.
+Read SYSTEM.md first, then RUN.md, then follow them.
 
 Scope: Auto
 Depth: Standard
@@ -42,14 +42,15 @@ Improve the pricing page so users can choose a plan faster.
 
 ### Option 2 - Add Layr to your project
 
-Use this when your AI tool works best with local files or cannot reliably read GitHub URLs.
+Use this when your tool works best with local files or cannot reliably read GitHub URLs.
 
 1. Download or clone this repo into your project root as `layr`.
-2. Copy this prompt and paste it into your AI model.
+2. Copy this prompt and paste it into your tool.
 3. Replace the task line with your own request.
 
 ```text
 Use ./layr/RUN.md for this task.
+Read ./layr/SYSTEM.md first, then ./layr/RUN.md, then follow them.
 
 Scope: Auto
 Depth: Standard
@@ -116,6 +117,7 @@ layr/screens/dashboard.md
 - [What it’s based on / Methods](#what-its-based-on--methods)
 - [Why it matters](#why-it-matters)
 - [How the system works](#how-the-system-works)
+- [System kernel](#system-kernel)
 - [Quality modes](#quality-modes)
 - [Module system](#module-system)
 - [Instructions](#instructions)
@@ -130,7 +132,7 @@ layr/screens/dashboard.md
 
 Layr is a rule-based production system for AI-built software.
 
-It gives AI tools a structured way to select the right product modules, apply proven methods, score the result, and improve weak areas before the output ships.
+It gives agentic tools a structured way to select the right product modules, apply proven methods, score the result, and improve weak areas before the output ships.
 
 ---
 
@@ -160,7 +162,7 @@ It gives AI tools a structured way to select the right product modules, apply pr
 - Copywriting - make messages clear, specific, and persuasive
 - and more
 
-Most AI tools know these ideas. Layr makes them operational.
+Most tools know these ideas. Layr makes them operational.
 
 ---
 
@@ -239,7 +241,25 @@ flowchart TD
 
 Layr should never block on missing context unless the missing detail would materially change the product direction.
 
-If context is missing, the AI should infer it and state assumptions briefly.
+If context is missing, Layr should infer it and state assumptions briefly.
+
+---
+
+## System kernel
+
+`SYSTEM.md` is Layr's central operating layer.
+
+It defines how the system selects surface types, applies hard gates, resolves method conflicts, and keeps recommendations tied to evidence.
+
+The kernel improves consistency across tasks by requiring every recommendation to connect to at least one of:
+
+- a selected Layr module
+- a selected Layr method
+- an observed product issue
+- a scorecard hard gate
+- a measurable production risk
+
+This keeps Layr science backed, evidence driven, and focused on production quality rather than taste.
 
 ---
 
@@ -272,15 +292,15 @@ See `ROADMAP.md` for the planned module direction.
 
 ## Instructions
 
-Use this system to build, review, or improve AI-generated product work until it is clearer, safer, faster, more accessible, more measurable, and more production-ready.
+Use this system to build, review, or improve generated product work until it is clearer, safer, faster, more accessible, more measurable, and more production-ready.
 
 ### Step 1 - Load Layr
 
-If your AI tool can read GitHub URLs, copy this prompt and paste it into your AI model:
+If your tool can read GitHub URLs, copy this prompt and paste it into your tool:
 
 ```text
 Use https://github.com/layr-hq/layr as the production system for AI-built apps.
-Read RUN.md first, then follow it.
+Read SYSTEM.md first, then RUN.md, then follow them.
 
 Scope: Auto
 Depth: Standard
@@ -289,12 +309,13 @@ Task:
 Improve the pricing page so users can choose a plan faster.
 ```
 
-If your AI tool cannot read GitHub URLs, download or clone this repo into your project root as `layr`.
+If your tool cannot read GitHub URLs, download or clone this repo into your project root as `layr`.
 
-Then copy this prompt and paste it into your AI model:
+Then copy this prompt and paste it into your tool:
 
 ```text
 Use ./layr/RUN.md for this task.
+Read ./layr/SYSTEM.md first, then ./layr/RUN.md, then follow them.
 
 Scope: Auto
 Depth: Standard
@@ -303,7 +324,7 @@ Task:
 Improve the pricing page so users can choose a plan faster.
 ```
 
-If your AI tool cannot read GitHub URLs reliably, use the local folder option.
+If your tool cannot read GitHub URLs reliably, use the local folder option.
 
 ### Step 2 - Describe the task
 
@@ -358,10 +379,11 @@ Primary action:
 
 This is optional. Layr should infer missing screen context from the task and codebase.
 
-### Step 5 - Let the AI build and refine
+### Step 5 - Let Layr build and refine
 
-The AI will:
+Layr will:
 
+- read the system kernel
 - read Layr rules
 - select relevant methods
 - infer missing context when safe
@@ -377,7 +399,8 @@ The AI will:
 
 | File | Purpose | User edits? |
 | --- | --- | --- |
-| `RUN.md` | Main entry point for AI tools | No |
+| `SYSTEM.md` | Central operating layer for surface selection, hard gates, conflict rules, and evidence standards | No |
+| `RUN.md` | Main execution entry point for agentic tools | No |
 | `modules/index.md` | Active and planned module routing | No |
 | `modules/ux.md` | UX behaviour, rules, scoring, and validation | No |
 | `modules/design.md` | Layout, hierarchy, spacing, and visual clarity | No |

@@ -8,6 +8,21 @@ The long-term direction is a modular AI product system for production-grade apps
 
 ## Current
 
+### System Kernel
+
+Status: Active
+
+Defines Layr's central operating layer for surface selection, hard gates, conflict rules, evidence standards, and output contracts.
+
+Coverage:
+
+- surface type detection
+- module selection defaults
+- hard gate matrix
+- method conflict rules
+- evidence standard
+- production output contract
+
 ### UX
 
 Status: Active

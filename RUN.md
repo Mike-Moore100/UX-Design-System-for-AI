@@ -1,6 +1,6 @@
 # Run Layr
 
-Use this file as the main entry point for Layr.
+Use this file after `SYSTEM.md` as the main execution entry point for Layr.
 
 Layr must work with zero setup, then improve when optional context is available.
 
@@ -11,7 +11,7 @@ Layr must work with zero setup, then improve when optional context is available.
 If the user provides only a task, proceed.
 
 Do not ask them to fill templates before work begins.
-Do not require edits to module files, `methods/`, or this file.
+Do not require edits to `SYSTEM.md`, module files, `methods/`, or this file.
 
 Default to:
 
@@ -26,13 +26,14 @@ Depth: Standard
 
 Read these files in order:
 
-1. `modules/index.md`
-2. active module rule files in `modules/` relevant to the task
-3. `methods/index.md`
-4. relevant method files
-5. `scorecard.md`
-6. `layr.config.md`, if present
-7. relevant screen brief in `/screens`, if present
+1. `SYSTEM.md`
+2. `modules/index.md`
+3. active module rule files in `modules/` relevant to the task
+4. `methods/index.md`
+5. relevant method files
+6. `scorecard.md`
+7. `layr.config.md`, if present
+8. relevant screen brief in `/screens`, if present
 
 If working from the GitHub repo URL, fetch the same files from the repository before applying the system.
 
@@ -194,16 +195,17 @@ If no screen brief exists, infer the screen intent from the task and codebase.
 
 For every task:
 
-1. Define the screen, user intent, primary goal, and primary action.
+1. Define the surface type, user intent, primary goal, and primary action.
 2. Read the user's `Scope:` and `Depth:` values, or use the defaults.
-3. Select relevant modules using `modules/index.md`.
-4. Select relevant methods using `methods/index.md` within the chosen depth.
-5. Apply active module rule files from `modules/` as strict constraints.
-6. Preserve the existing design language unless the task explicitly asks for a redesign.
-7. Build or improve the UI.
-8. Score the result with `scorecard.md`.
-9. Fix weak areas.
-10. Repeat until the score is at least 85.
+3. Use `SYSTEM.md` to identify hard gates and conflict rules.
+4. Select relevant modules using `modules/index.md`.
+5. Select relevant methods using `methods/index.md` within the chosen depth.
+6. Apply active module rule files from `modules/` as strict constraints.
+7. Preserve the existing design language unless the task explicitly asks for a redesign.
+8. Build or improve the UI.
+9. Score the result with `scorecard.md`.
+10. Fix weak areas.
+11. Repeat until the score is at least 85.
 
 ---
 
@@ -230,8 +232,10 @@ Return only:
 
 1. final improved solution
 2. Layr score `/100`
-3. key improvements made
-4. assumptions, only when context was inferred
+3. selected modules and methods
+4. hard gates checked
+5. key improvements made
+6. assumptions, only when context was inferred
 
 For code tasks, implement the change directly when possible.
 

@@ -7,6 +7,21 @@ Use GitHub Releases for public tagged releases.
 
 ---
 
+## [Unreleased]
+
+### Added
+
+- Added `SYSTEM.md` as the central Layr operating layer for surface selection, hard gates, conflict rules, evidence standards, and output contracts.
+
+### Changed
+
+- Updated `RUN.md` so the System Kernel is first in the load order.
+- Updated `README.md` to explain the System Kernel and make setup prompts load it before execution.
+- Updated `ROADMAP.md` to list the System Kernel as an active production layer.
+- Generalized tool references in touched documentation so the system stays tool-neutral.
+
+---
+
 ## [1.3.0] - 2026-05-09
 
 ### Added
@@ -16,7 +31,7 @@ Use GitHub Releases for public tagged releases.
 - Added active Performance, Analytics, QA, and AI Product module rule files.
 - Added 5 launch-critical methods each for Performance, Analytics, QA, and AI Product.
 - Added `Scope:` and `Depth:` controls so users can invoke only the modules and method depth they need.
-- Expanded `methods/index.md` so AI tools can route across the full method library by category, surface type, and problem type.
+- Expanded `methods/index.md` so agentic tools can route across the full method library by category, surface type, and problem type.
 
 ### Changed
 
@@ -39,7 +54,7 @@ Use GitHub Releases for public tagged releases.
 ### Changed
 
 - Split methods into `methods/ux/` and `methods/design/`.
-- Updated `methods/index.md` to route AI tools between UX methods and design methods.
+- Updated `methods/index.md` to route agentic tools between UX methods and design methods.
 - Moved visual design methods into `methods/design/`.
 - Expanded the module routing layer across all active Layr modules.
 - Added design-specific methods for colour theory, typography, spacing rhythm, layout composition, contrast and emphasis, component consistency, and motion clarity.
@@ -59,8 +74,8 @@ Use GitHub Releases for public tagged releases.
 - Made screen briefs optional instead of required.
 - Updated `modules/ux.md` and `modules/design.md` so users do not edit core rule files.
 - Added evidence-based scoring through `scorecard.md`.
-- Added `methods/index.md` so AI tools can choose relevant methods instead of applying everything.
-- Added AI-tool entry files for Codex, Claude, and Cursor.
+- Added `methods/index.md` so agentic tools can choose relevant methods instead of applying everything.
+- Added entry files for supported editors and agentic tools.
 - Normalized method and screen folders to lowercase paths.
 
 ### Fixed
