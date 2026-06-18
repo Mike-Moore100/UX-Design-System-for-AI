@@ -453,9 +453,9 @@ See `CHANGELOG.md` for version history.
 
 ---
 
-## Goal
+## Outcome
 
-The user should:
+The end user should:
 
 - understand instantly  
 - know exactly what to do  
