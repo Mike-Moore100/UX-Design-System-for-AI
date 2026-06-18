@@ -451,9 +451,6 @@ Layr will:
 
 See `CHANGELOG.md` for version history.
 
-Use GitHub Releases when publishing a tagged release.
-Use `CHANGELOG.md` for the in-repo history that readers can see directly from the repository.
-
 ---
 
 ## Goal
