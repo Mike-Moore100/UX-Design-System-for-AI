@@ -4,10 +4,6 @@ A modular production system for turning AI-built interfaces into production-grad
 
 Works with Claude, Cursor, and other agentic development tools.
 
-Join the Reddit community for updates, ideas and feedback from other builders using modern agentic workflows.
-
-reddit.com/r/Layr
-
 ## Before vs After
 
 Turn typical AI output into a clearer, more usable, more production-ready interface.
